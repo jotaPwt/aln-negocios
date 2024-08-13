@@ -157,6 +157,7 @@ h3 {
 }
 
 
+
 .btn-whatsapp {
     position: fixed;
     width: 60px;
@@ -268,7 +269,7 @@ display: none;
     }
     
     .imagem__logo {
-        max-width: 7vh;
+        max-width: 7.5vh;
         height: auto;
     }
 
@@ -323,7 +324,7 @@ display: none;
         font-size: 0.6em;
         padding: 11px 12px;
         margin: 10px 0 15px 0;
-        width: 90%;
+        width: 60%;
     }
 
     .btn-zap-preto {
@@ -338,7 +339,7 @@ display: none;
 
     
     .form1 {
-        top: 6.5em;
+        top: 6.25em;
         
     }
 
@@ -358,8 +359,12 @@ display: none;
         font-size: 1em;
     }
 
+    .fa-whatsapp {
+        margin-top: 16px;
+    }
 
 
+    /* carrossel */
 
 
     .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
@@ -385,6 +390,49 @@ display: none;
         font-size: 0;
         transition: transform 0.1s;
       }
+
+      .carousel {
+        position: relative;
+        padding-top: 75%;
+        filter: drop-shadow(0 0 10px #0003);
+        perspective: 100px;
+      }
+      
+      .carousel__viewport {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        touch-action: pan-x;
+        overscroll-behavior-x: contain; /* Evita que o conteúdo saia da área visível */
+      }
+      
+      .carousel__slide {
+        flex: 0 0 100%;
+        width: 100%;
+        scroll-snap-align: center;
+      }
+      
+      .carousel__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none; /* Evita que a imagem interfira no deslize */
+      }
+      
+      /* Removendo animações que podem interferir */
+      @media (hover: hover) {
+        .carousel__snapper {
+          animation: none;
+        }
+      }
+      
+
 }
 
 
@@ -504,6 +552,9 @@ display: none;
         text-align: center;
     }
 
+    .fa-whatsapp {
+        margin-top: 16px;
+    }
     
 
       /*OPORTUNIDADES*/
@@ -543,6 +594,49 @@ display: none;
         margin-top: 3em;
     }
 
+    /* carrossel */
+
+    .carousel {
+        position: relative;
+        padding-top: 75%;
+        filter: drop-shadow(0 0 10px #0003);
+        perspective: 100px;
+      }
+      
+      .carousel__viewport {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        touch-action: pan-x;
+        overscroll-behavior-x: contain; /* Evita que o conteúdo saia da área visível */
+      }
+      
+      .carousel__slide {
+        flex: 0 0 100%;
+        width: 100%;
+        scroll-snap-align: center;
+      }
+      
+      .carousel__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none; /* Evita que a imagem interfira no deslize */
+      }
+      
+      /* Removendo animações que podem interferir */
+      @media (hover: hover) {
+        .carousel__snapper {
+          animation: none;
+        }
+      }
+      
 }
 
 
@@ -632,6 +726,50 @@ display: none;
     }
   
 
+    /* carrossel */
+
+    .carousel {
+        position: relative;
+        padding-top: 75%;
+        filter: drop-shadow(0 0 10px #0003);
+        perspective: 100px;
+      }
+      
+      .carousel__viewport {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        touch-action: pan-x;
+        overscroll-behavior-x: contain; /* Evita que o conteúdo saia da área visível */
+      }
+      
+      .carousel__slide {
+        flex: 0 0 100%;
+        width: 100%;
+        scroll-snap-align: center;
+      }
+      
+      .carousel__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none; /* Evita que a imagem interfira no deslize */
+      }
+      
+      /* Removendo animações que podem interferir */
+      @media (hover: hover) {
+        .carousel__snapper {
+          animation: none;
+        }
+      }
+      
+
   }
 @media screen and (min-width: 1000px) and (max-width: 1428px) {
 
@@ -688,7 +826,7 @@ display: none;
     .ancora {
         text-decoration: none;
         color: white;
-        font-size: 1.6em;
+        font-size: 1.3em;
         font-weight: 900;
         margin: 0 12px;
         font-family: 'Roboto Condensed', sans-serif;
@@ -731,6 +869,11 @@ display: none;
         font-size: 1.4em;
     }
 
+
+    .fa-whatsapp {
+        margin-top: 18px;
+    }
+    
     /* .conteiner-home {
         display: flex;
         flex-direction: row-reverse;
@@ -743,14 +886,14 @@ display: none;
     } */
 
     .imagem__logo {
-        max-width: 8rem;
+        max-width: 7.5rem;
         height: auto;
         margin-left: 5em;
     }
     
    
     .logo-titulo {
-        max-width: 80%;
+        max-width: 70%;
         height: auto;  
     }
 
@@ -847,12 +990,56 @@ display: none;
         font-size: 40px;
        
     }
+
+    /* carrossel */
+
+    .carousel {
+        position: relative;
+        padding-top: 75%;
+        filter: drop-shadow(0 0 10px #0003);
+        perspective: 100px;
+      }
+      
+      .carousel__viewport {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        touch-action: pan-x;
+        overscroll-behavior-x: contain; /* Evita que o conteúdo saia da área visível */
+      }
+      
+      .carousel__slide {
+        flex: 0 0 100%;
+        width: 100%;
+        scroll-snap-align: center;
+      }
+      
+      .carousel__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none; /* Evita que a imagem interfira no deslize */
+      }
+      
+      /* Removendo animações que podem interferir */
+      @media (hover: hover) {
+        .carousel__snapper {
+          animation: none;
+        }
+      }
+      
 }
 
 @media screen and (min-width: 1428px) {
 
     .main {
-        padding: 5em;
+        padding: 4em;
     }
    
     .hamburguer {
@@ -868,7 +1055,7 @@ display: none;
     .ancora {
         text-decoration: none;
         color: white;
-        font-size: 1.9em;
+        font-size: 1.5em;
         font-weight: 900;
         margin: 0 1.5em;
         font-family: 'Roboto Condensed', sans-serif;
@@ -893,17 +1080,7 @@ display: none;
         width: 100%;
     }
 
-    /*
 
-    .imagem-Fcontato {
-        width: 50vh;
-        height: auto;
-        border: 1px solid;
-        border-radius: 1em;
-        margin: 0 7em 9em 3em;
-    }
-
-    */
 
     h1 {
         font-size: 3.5em;
@@ -926,8 +1103,8 @@ display: none;
     }
 
     .titulo-oport {
-        font-size: 2.7em;
-        margin: 1em 0 0 1em;
+        font-size: 2.4em;
+        margin: 0 0 0 1em;
     }
 
     .p-servicos {
@@ -952,7 +1129,7 @@ display: none;
     }
 
     .imagem__logo {
-        width: 100%;
+        width: 80%;
     }
 
 
@@ -969,7 +1146,7 @@ display: none;
     }
 
     .logo-titulo {
-        width: 40vh;
+        width: 38vh;
         height: auto;
         
     }
@@ -1058,7 +1235,7 @@ display: none;
     }
 
     .conteiner-oport {
-        padding: 6em;
+        padding: 5em;
         display: grid;
         grid-template-columns: 50fr 50fr;
         gap: 3em;
@@ -1096,7 +1273,7 @@ display: none;
 
     .btn {
         font-size: inherit;
-        padding: 25px 80px;
+        padding: 22px 80px;
         margin: 0 0 15px 15px;
     }
 
@@ -1108,7 +1285,51 @@ display: none;
         font-size: 50px;
     }
 
+    .fa-whatsapp {
+        margin-top: 19px;
+    }
 
+   /* carrossel */
 
-   
+   .carousel {
+    position: relative;
+    padding-top: 75%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    touch-action: pan-x;
+    overscroll-behavior-x: contain; /* Evita que o conteúdo saia da área visível */
+  }
+  
+  .carousel__slide {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+  
+  .carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* Evita que a imagem interfira no deslize */
+  }
+  
+  /* Removendo animações que podem interferir */
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation: none;
+    }
+  }
+  
 }
