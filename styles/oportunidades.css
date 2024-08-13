@@ -166,10 +166,6 @@
     margin: 1em 0;
 }
 
-/* .carousel__prev,
-.carousel__next {
-    display: none; 
-} */
 
 
 @keyframes tonext {
@@ -276,17 +272,16 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  /* Remover fundo colorido */
   background-color: transparent;
   counter-increment: item;
 }
 
-/* Remover background alternado */
+
 .carousel__slide:nth-child(even) {
   background-color: transparent;
 }
 
-/* Remover número do slide */
+
 .carousel__slide:before {
   content: none;
 }
@@ -303,22 +298,18 @@ ol, li {
 .carousel__slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garantir que a imagem cubra todo o slide */
+  object-fit: cover; 
   touch-action: pan-y;
   touch-action: none;
 }
 
 @media (hover: hover) {
   .carousel__snapper {
-    /* animation-name: tonext, snap; */
     animation-timing-function: ease;
     animation-duration: 4s;
     animation-iteration-count: infinite;
   }
 
-  /* .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  } */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -433,6 +424,26 @@ ol, li {
   right: 10px;
 }
 
+.carousel__slide {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+  
+  .carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; 
+  }
+
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation: none;
+    }
+  }
+
 
 
 
@@ -483,27 +494,7 @@ ol, li {
     right: 10px;
   }
   
-  /* main */
-
-  /* .main-conteiner {
-    margin: 0 0 5em 0;
-    width: 100%;
-    text-align: center;
-    
-    height: auto;
 }
 
-.conteiner-oport {
-    
-    display: grid;
-    grid-template-columns: 50fr 50fr;
-    gap: 3em;
-    height: auto;
-    
-}
 
-.conteiner-oportunidade {
-  text-align: center;
-} */
 
-}
