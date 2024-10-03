@@ -22,7 +22,7 @@ html {
     --fonte-principal: Madefor, "Helvetica Neue", Helvetica, Arial, "メイリオ", "meiryo", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", sans-serif;
     --fonte-titulo: "Open Sans", sans-serif;
     --fonte-nunito: "Nunito Sans", sans-serif;
-    --fonte-roboto: 'Roboto Condensed', sans-serif;
+    --fonte-roboto: "Poppins", sans-serif;
 }
 
 body {
@@ -38,8 +38,8 @@ body {
 }
 
 header {
-    background: rgb(4,20,37);
-    background: linear-gradient(90deg, rgba(4,20,37,0.8436624649859944) 24%, rgba(43,73,106,0.829656862745098) 59%, rgba(211,221,227,0.19100140056022408) 100%);
+  background: rgb(19,57,95);
+background: linear-gradient(90deg, rgba(19,57,95,0.8576680672268908) 21%, rgba(19,57,95,1) 78%);
 
     
 
@@ -1204,7 +1204,7 @@ display: none;
 
     .subtitulo {
         margin-top: 1em;
-        margin-bottom: -6em;
+        margin-bottom: -4em;
     }
 
    .titulo-home {
